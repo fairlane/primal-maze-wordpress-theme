@@ -59,4 +59,4 @@
         <?php endif ?>
 
 		<div id="page-content">
-			<div class="container">
+			<div class="container pm-main-content">

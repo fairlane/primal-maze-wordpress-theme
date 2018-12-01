@@ -12,6 +12,13 @@
  Text Domain:  primalmaze
 */
 
+body {
+    margin: 0px;
+    padding: 0px;
+    background-position-y: 250px;
+    background-size: cover;
+    background: #000000 url(img/rock-stock-bg-1.jpg) no-repeat;
+}
 .pm-header-logo-container {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -67,6 +74,9 @@ img.pm-logo {
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
     background-color: #cccccc;
+}
+
+.pm-main-content {
 }
 
 @media (max-width: 768px) {
