@@ -4,7 +4,7 @@
  Description:  Custom Theme for Primal Maze - the most epic rock band
  Author:       Hannu the King
  Author URI:   https://github.com/fairlane/
- Template:     twentyseventeen
+ Template:     simple-bootstrap
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,6 +12,69 @@
  Text Domain:  primalmaze
 */
 
-#wp-custom-header {
-    display: none;
+.pm-header-logo-container {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    overflow: hidden;
+    display: block;
+    height: 220px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background: #000000 url(img/bg-partial.png) center no-repeat;
+    margin: 0;
+    z-index: 1000;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+img.pm-logo {
+    height: auto;
+    max-width: 100%;
+}
+
+.navbar-static-top {
+    position: fixed;
+    width: 100%;
+    top: 200px;
+}
+
+#pm-block {
+    display: block;
+}
+
+#page-content {
+    display: block;
+    margin-top: 250px;
+}
+
+#page-content > .container {
+    background-color: #00a0d2;
+    opacity: 0.8;
+}
+
+.navbar-default {
+    background-color: #fafafa;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #333333;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+    background-color: #cccccc;
+}
+
+@media (max-width: 768px) {
+    .navbar-static-top {
+        top: 140px;
+    }
+
+    .pm-header-logo-container {
+        height: 140px;
+    }
 }
