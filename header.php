@@ -8,8 +8,17 @@
 
 	<?php wp_head(); ?>
 </head>
-	
-<body <?php body_class(); ?>>
+<?php
+if (has_post_thumbnail()) {
+    $bgImageUrl = get_the_post_thumbnail_url(null,'full');
+    $bgCss =  sprintf('style="background-image: url(%s)"', $bgImageUrl);
+}
+else {
+    $bgCss = '';
+}
+?>
+
+<body <?php body_class(); echo $bgCss ?> >
 
 	<div id="content-wrapper">
 

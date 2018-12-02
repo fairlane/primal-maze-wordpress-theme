@@ -15,9 +15,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-position-y: 250px;
+    background: #000000 url("img/rock-stock-bg-1.jpg") no-repeat fixed center;
     background-size: cover;
-    background: #000000 url(img/rock-stock-bg-1.jpg) no-repeat;
 }
 .pm-header-logo-container {
     position: fixed; /* Set the navbar to fixed position */
@@ -28,7 +27,7 @@ body {
     height: 220px;
     -webkit-background-size: cover;
     background-size: cover;
-    background: #000000 url(img/bg-partial.png) center no-repeat;
+    background: #000000 url("img/bg-partial.png") center no-repeat;
     margin: 0;
     z-index: 1000;
     padding-top: 30px;
@@ -53,10 +52,11 @@ img.pm-logo {
 #page-content {
     display: block;
     margin-top: 250px;
+    color: #e6e6e6;
 }
 
 #page-content > .container {
-    background-color: #00a0d2;
+    background-color: #333333;
     opacity: 0.8;
 }
 
@@ -72,11 +72,19 @@ img.pm-logo {
     color: #333;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
-    background-color: #cccccc;
+.navbar-default .navbar-nav > .active > a {
+    background-color: #CCCCCC;
+    color: #333333;
+
 }
 
-.pm-main-content {
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+    background-color: #cccccc;
+    color: #333333;
+}
+
+.navbar-nav > li {
+    text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -87,4 +95,17 @@ img.pm-logo {
     .pm-header-logo-container {
         height: 140px;
     }
+}
+
+header > div.featured-image {
+    display: none;
+}
+
+.block {
+    background-color:transparent;
+    box-shadow: none;
+}
+
+#content-wrapper > footer {
+    display: block;
 }
