@@ -15,7 +15,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: #000000 url("img/rock-stock-bg-1.jpg") no-repeat fixed center;
+    background: #000000 url("img/rock-stock-bg-1.jpg") no-repeat fixed top;
     background-size: cover;
 }
 .pm-header-logo-container {
@@ -27,7 +27,7 @@ body {
     height: 220px;
     -webkit-background-size: cover;
     background-size: cover;
-    background: #000000 url("img/bg-partial.png") center no-repeat;
+    background: #000000 url("img/bg-partial.png") no-repeat;
     margin: 0;
     z-index: 1000;
     padding-top: 30px;
@@ -50,14 +50,15 @@ img.pm-logo {
 }
 
 #page-content {
-    display: block;
-    margin-top: 250px;
     color: #e6e6e6;
+    overflow: hidden;
+    height: 100%;
 }
 
 #page-content > .container {
     background-color: #333333;
     opacity: 0.8;
+    margin-top: 200px;
 }
 
 .navbar-default {
@@ -70,31 +71,33 @@ img.pm-logo {
 
 .navbar-default .navbar-nav > li > a {
     color: #333;
+    display: inline-block;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: transparent;
+    color: #333333;
+    text-decoration: underline;
 }
 
 .navbar-default .navbar-nav > .active > a {
-    background-color: #CCCCCC;
+    background-color: transparent;
     color: #333333;
 
 }
 
+.main-navigation ul li:hover > a {
+    background: #d54e21;
+}
+
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
-    background-color: #cccccc;
+    background-color: transparent;
     color: #333333;
 }
 
 .navbar-nav > li {
     text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-    .navbar-static-top {
-        top: 140px;
-    }
-
-    .pm-header-logo-container {
-        height: 140px;
-    }
 }
 
 header > div.featured-image {
@@ -107,5 +110,34 @@ header > div.featured-image {
 }
 
 #content-wrapper > footer {
-    display: block;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .navbar-static-top {
+        top: 140px;
+    }
+
+    .pm-header-logo-container {
+        height: 140px;
+    }
+
+    #page-content > .container {
+        margin-top: 140px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-default ul li:before {
+        content: "\007c";
+        display: inline;
+        margin-right: 6px;
+    }
+
+    .navbar-default ul li:first-child:before,
+    .navbar-default .children li:before {
+        content: "";
+        display: none;
+    }
+
 }
