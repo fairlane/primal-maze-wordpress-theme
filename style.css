@@ -15,8 +15,6 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: #000000 url("img/rock-stock-bg-1.jpg") no-repeat fixed top;
-    background-size: cover;
 }
 .pm-header-logo-container {
     position: fixed; /* Set the navbar to fixed position */
@@ -55,6 +53,8 @@ img.pm-logo {
     color: #e6e6e6;
     overflow: hidden;
     height: 100%;
+    background: #000000 url("img/the-maze-bg.png") no-repeat fixed center 250px;
+    background-size: 40%;
 }
 
 #page-content > .container {
@@ -125,7 +125,12 @@ header > div.featured-image {
     }
 
     #page-content > .container {
-        margin-top: 140px;
+        margin-top: 160px;
+    }
+
+    #page-content {
+        background-position-y: 195px;
+        background-size: contain;
     }
 }
 
@@ -141,5 +146,4 @@ header > div.featured-image {
         content: "";
         display: none;
     }
-
 }
