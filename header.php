@@ -33,7 +33,7 @@ else {
 
 		<header id="pm-block">
             <div class="row container pm-header-logo-container">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center header-logo-wrapper">
                     <img class="pm-logo align-middle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pm-logo-transparent.png" />
                 </div>
             </div>
