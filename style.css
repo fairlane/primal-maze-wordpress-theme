@@ -166,6 +166,11 @@ p.pm-social-footer {
     display: block;
     font-size: 0.7em;
 }
+.widgettitle {
+    font-size: 1.6em
+    margin-bottom: 12px;
+}
+
 @media (max-width: 768px) {
     .navbar-static-top {
         top: 140px;
