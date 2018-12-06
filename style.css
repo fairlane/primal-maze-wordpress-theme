@@ -44,6 +44,10 @@ img.pm-logo {
     max-height: 100%;
 }
 
+img.social-footer {
+    height: auto;
+}
+
 .header-logo-wrapper{
     height: 100%;
     vertical-align: middle;
@@ -134,6 +138,21 @@ header > div.featured-image {
 
 #content-wrapper > footer {
     overflow: hidden;
+}
+
+ul.pm-social-footer {
+    list-style-type: none;
+    display: inline-block;
+    padding: 4px;
+}
+
+ul.pm-social-footer > li {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+p.pm-social-footer {
+    display: inline-block;
 }
 
 @media (max-width: 768px) {
