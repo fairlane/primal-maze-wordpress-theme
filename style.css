@@ -15,6 +15,12 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Noto Serif', serif;
+    font-size: 17px;
+}
+
+h1,h2,h3 {
+    font-family: 'Noto Serif', serif;
 }
 .pm-header-logo-container {
     position: fixed; /* Set the navbar to fixed position */
@@ -22,7 +28,7 @@ body {
     width: 100%; /* Full width */
     overflow: hidden;
     display: block;
-    height: 200px;
+    height: 220px;
     -webkit-background-size: cover;
     background-size: cover;
     background: #000000 url("img/header-bg.png") no-repeat;
@@ -54,7 +60,7 @@ img.pm-logo {
 }
 
 #page-content {
-    color: #e6e6e6;
+    color: #fbfbfb;
     overflow: hidden;
     height: 100%;
     background: #000000 url("img/the-maze-bg.png") no-repeat fixed center 250px;
@@ -64,14 +70,19 @@ img.pm-logo {
 #page-content > .container {
     background-color: #333333;
     opacity: 0.8;
-    margin-top: 250px;
-    height: calc(100% - 250px);
+    margin-top: 240px;
+    height: calc(100% - 240px);
 }
 
 .navbar-default {
     background-color: #fafafa;
+    text-align: center;
+    border: none;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #333333;
 }
@@ -107,6 +118,11 @@ img.pm-logo {
     text-transform: uppercase;
 }
 
+.navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
 header > div.featured-image {
     display: none;
 }
@@ -136,8 +152,14 @@ header > div.featured-image {
 
     #page-content {
         background-position-y: 195px;
-        background-size: cover;
-        height: calc(100% - 0px);
+    }
+
+    .navbar-nav {
+        float: left;
+        display: table-cell;
+    }
+    .navbar-default {
+        text-align: left;
     }
 }
 
@@ -152,5 +174,17 @@ header > div.featured-image {
     .navbar-default .children li:before {
         content: "";
         display: none;
+    }
+
+    #sidebar-right:before {
+        position: absolute;
+        left: 0%;
+        top: 30px;
+        content: '';
+        z-index: 9;
+        border-left: 1px solid #484848;
+        border-right: 1px solid #6C6C6C;
+        width: 0;
+        height: 90%;
     }
 }
