@@ -151,10 +151,21 @@ ul.pm-social-footer > li {
     margin-right: 6px;
 }
 
+#main > article header .meta {
+    display: none;
+}
 p.pm-social-footer {
     display: inline-block;
 }
 
+.vertical-nav .widget ul li {
+    border-bottom: none;
+}
+
+.vertical-nav .post-date {
+    display: block;
+    font-size: 0.7em;
+}
 @media (max-width: 768px) {
     .navbar-static-top {
         top: 140px;
