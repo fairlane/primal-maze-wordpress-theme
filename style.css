@@ -191,7 +191,7 @@ input, textarea {
     color: #1a1a1a;
 }
 
-nf-response-msg p {
+.nf-response-msg > p {
     color: #4fc323;
     size: 1.1em;
 }
