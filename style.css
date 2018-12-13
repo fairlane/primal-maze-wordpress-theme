@@ -186,6 +186,16 @@ p.pm-social-footer {
     }
 }
 
+input, textarea {
+    opacity: 0.7;
+    color: #1a1a1a;
+}
+
+nf-response-msg p {
+    color: #4fc323;
+    size: 1.1em;
+}
+
 @media (min-width: 768px) {
     .navbar-default ul li:before {
         content: "\007c";
