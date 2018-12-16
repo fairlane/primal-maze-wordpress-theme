@@ -6,16 +6,13 @@
     <div id="inner-footer" class="vertical-nav">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 text-center">
-                    <p class="pm-social-footer">
-                    FOLLOW US ON
-                    </p>
+                <div class="col-xs-12 col-lg-12 col-md-12 text-center">
                     <ul class="pm-social-footer">
                     <?php
-                        $navItems = wp_get_nav_menu_items('social');
-                        if (is_array($navItems)) {
+                        $secondaryNavItems = wp_get_nav_menu_items('social');
+                        if (is_array($secondaryNavItems)) {
                             /* @var $navItem WP_Post */
-                            foreach ($navItems as $navItem) {
+                            foreach ($secondaryNavItems as $navItem) {
                                 echo sprintf(
                                         '<li><a href="%s" target="_blank"><img class="social-footer" src="%s"></a></li>',
                                         $navItem->url,
@@ -25,11 +22,31 @@
                         }
                     ?>
                     </ul>
-                    <p class="pm-social-footer">
-                        Copyright &copy; Primal Maze
-                    </p>
                 </div>
             </div>
+            <?php
+                $secondaryNavItems = wp_get_nav_menu_items('secondary');
+                if (is_array($secondaryNavItems) && sizeof($secondaryNavItems) > 0):
+            ?>
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 col-md-12 text-center">
+                    <ul class="pm-social-footer pm-footer-text">
+                    <?php
+                        /* @var $navItem WP_Post */
+                        foreach ($secondaryNavItems as $navItem) {
+                            echo sprintf(
+                                    '<li><a href="%s">%s</a></li>',
+                                    $navItem->url,
+                                    $navItem->title
+                            );
+                        }
+                    ?>
+                    </ul>
+                </div>
+            </div>
+            <?php
+                endif;
+            ?>
         </div>
     </div>
 </footer>

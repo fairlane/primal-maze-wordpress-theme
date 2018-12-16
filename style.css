@@ -140,6 +140,21 @@ ul.pm-social-footer > li {
     display: inline-block;
     margin-right: 6px;
 }
+
+ul.pm-footer-text > li:before {
+    content: "\007c";
+    display: inline;
+    margin-right: 6px;
+}
+
+ul.pm-footer-text a {
+    color: inherit;
+}
+ul.pm-footer-text li:first-child:before,
+ul.pm-footer-text .children li:before {
+    content: "";
+    display: none;
+}
 #main > article header .meta {
     display: none;
 }
