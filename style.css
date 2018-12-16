@@ -138,15 +138,16 @@ ul.pm-social-footer {
 }
 ul.pm-social-footer > li {
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 20px;
 }
-
+ul.pm-footer-text > li {
+    margin-right: 5px;
+}
 ul.pm-footer-text > li:before {
     content: "\007c";
     display: inline;
     margin-right: 6px;
 }
-
 ul.pm-footer-text a {
     color: inherit;
 }
@@ -176,22 +177,25 @@ p.pm-social-footer {
 .widget-content {
     width: 100%;
 }
-
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #efefef;
+}
 @media (max-width: 768px) {
     .navbar-static-top {
-        top: 90px;
+        top: 20px;
     }
     .pm-header-logo-container {
         height: 90px;
         padding-top: 15px;
         padding-bottom: 15px;
+        border-bottom: 2px solid #242424;
     }
     #page-content > .container {
-        margin-top: 110px;
-        height: calc(100% - 110px);
+        margin-top: 90px;
+        height: calc(100% - 90px);
     }
     #page-content {
-        background-position-y: 145px;
+        background-position-y: 125px;
     }
     .navbar-nav {
         float: left;
@@ -199,6 +203,12 @@ p.pm-social-footer {
     }
     .navbar-default {
         text-align: left;
+        background-color: transparent;
+    }
+    #navbar-responsive-collapse {
+        background-color: #fafafa;
+        position: relative;
+        top: 20px;
     }
 }
 
@@ -211,14 +221,12 @@ input, textarea {
     color: #4fc323;
     size: 1.1em;
 }
-
 @media (min-width: 768px) {
     .navbar-default ul li:before {
         content: "\007c";
         display: inline;
         margin-right: 6px;
     }
-
     .navbar-default ul li:first-child:before,
     .navbar-default .children li:before {
         content: "";
