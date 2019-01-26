@@ -4,7 +4,7 @@
  Description:  Custom Theme for Primal Maze - the most epic rock band
  Author:       Hannu the King
  Author URI:   https://github.com/fairlane/
- Version: 1.0.0
+ Version: 1.0.1
  Template:     simple-bootstrap
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
@@ -123,8 +123,7 @@ img.social-footer {
     margin-bottom: 15px;
 }
 #page-content > .container {
-    background-color: #333333;
-    opacity: 0.8;
+    background: rgba(51, 51, 51, 0.93);
     margin-top: 240px;
     height: calc(100% - 240px);
 }
