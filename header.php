@@ -35,7 +35,9 @@ else {
 		<header id="pm-block">
             <div class="row container pm-header-logo-container">
                 <div class="col-lg-12 text-center header-logo-wrapper">
-                    <img class="pm-logo align-middle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pm-logo-transparent.png" />
+                    <a href="<?php echo home_url(); ?>">
+                        <img class="pm-logo align-middle" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pm-logo-transparent.png" />
+                    </a>
                 </div>
             </div>
 			<nav class="navbar navbar-default navbar-static-top">
