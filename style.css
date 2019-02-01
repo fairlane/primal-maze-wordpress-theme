@@ -95,7 +95,11 @@ img.social-footer {
 .has-post-thumbnail .article-header {
     border-bottom: 1px solid #e6e6e6;
 }
-
+#main > article section img {
+    border: 1px solid #484848;
+    background-color: transparent;
+    padding: 0;
+}
 .vertical-nav .widget ul li {
     margin: 0;
     padding: 6px 0 6px 25px;
@@ -103,7 +107,6 @@ img.social-footer {
     background: url("img/the-maze-bullet.png") no-repeat left center;
     background-size: 14px;
 }
-
 .pm-main-post-list .title{
     padding-left: 25px;
     background-image: url("img/the-maze-bullet.png");
