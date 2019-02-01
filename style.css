@@ -93,7 +93,7 @@ img.social-footer {
 }
 
 .has-post-thumbnail .article-header {
-    border-bottom: inherit;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .vertical-nav .widget ul li {
