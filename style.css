@@ -180,10 +180,8 @@ img.social-footer {
 }
 .navbar-nav {
     display: inline-block;
-    float: none;
-}
-.navbar-nav > ul {
     list-style-type: none;
+    float: none;
 }
 header > div.featured-image {
     display: none;
