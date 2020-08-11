@@ -182,6 +182,9 @@ img.social-footer {
     display: inline-block;
     float: none;
 }
+.navbar-nav > ul {
+    list-style-type: none;
+}
 header > div.featured-image {
     display: none;
 }
